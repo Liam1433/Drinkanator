@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Reverse Cocktail search</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    nav {
+      background-color: black;
+    }
+
+    nav a {
+      font-size: 40px;
+      color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+       
+    form {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 1.2em;
+      margin-right: 10px;
+      
+    }
+
+    input[type="text"] {
+wavybluet-size: 1.2em;
+      padding: 5px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      outline: none;
+      width: 100%;
+    }
+
+    #generateBtn {
+      font-size: 1.2em;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    #generateBtn:hover {
+      background-color: #2E8B57;
+    }
+
+    .result {
+      text-align: center;
+    }
+
+    .result h2 {
+      font-size: 2.5em;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .result img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .result h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .result ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .result li {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      form {
+        flex-direction: column;
+      }
+        input[type="text"] {
+        margin-bottom: 10px;
+      }
+    }
+    
+    .dropdown {
+      color: black;
+      font-size: 18px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+      word-spacing:2px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .form-label{
+      font-size:17px;
+      text-align: center;
+   }
+    main{
+      height: 700px;
+      
+    }  
+  </style>
+</head>
+<body>
+  <nav>
+    <img id="logo"
+     		src="cocktail3.jpg"
+     		width="10%" 
+        height="5%"
+     		title= "Company Logo"
+     		alt="Picture">
+      
+    <a>Drinkanator</a>
+
+    
+  </nav>
+  <br>
+<main>
+  <div class="dropdown">
+    <span>About</span>
+    <div class="dropdown-content">
+      <p>The purpose of this website is to make party prepping easier.
+        With just the input of an
+    ingredient, a cocktail will be generated with the additional ingredients needed to create it allowing you and your friends to have great time whilst sipping on a homeade drink.</p>
+    </div>
+  </div>
+
+  <br>
+
+  <h2>Welcome to Drinkanator!</h2>
+ 
+  <label for="ingredient">Enter an ingredient you have at home:</label>
+		<input type="text" id="ingredient" placeholder="e.g. vodka, lime, rum">
+		<button id="generateBtn">Generate Cocktail</button>
+		<div id="result"></div>
+</main>
+  <script src="script.js"></script>
+</body>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer>
+    <p>&copy; <i>FreeLancers</i> </p>
+			<a href="https://www.facebook.com" target="_blank"> 
+				<img alt="facebook" src="facebook.png" width="4%"></a>
+			&nbsp;
+
+			<a href="https://www.instagram.com/" target="_blank">
+				<img alt="instagram" src="insta.png" width="4%"></a>	
+
+			<a href="https://www.twitter.com" target="_blank">
+				<img alt="twitter" src="twitter.png" width="4%"></a>
+
+			<br>
+  </footer>
+</html> 
